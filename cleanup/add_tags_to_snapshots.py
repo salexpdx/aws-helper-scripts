@@ -84,7 +84,6 @@ for snapshot in snapshots:
             exit(1)
 
 
-exit(0)
 
 # Next we are going to loop through every AMI that we own and use information from that to tag the snapshot
 image_response = ec2client.describe_images(Owners=["self"])
